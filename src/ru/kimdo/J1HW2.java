@@ -80,8 +80,8 @@ public class J1HW2 {
         System.out.println("Было:");
         showIntArray(array);
 
-        for (int i = 0; i < array.length; i++) {           //Объясните разницу при выводе for(int i : array) {
-            if (array[i] < 6) array[i] = array[i] * 2;     // if (i < 6) i = i * 2; }
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < 6) array[i] = array[i] * 2;
         }
 
         System.out.println("Стало:");
@@ -121,7 +121,8 @@ public class J1HW2 {
     private static void showTask5() {
 
         System.out.println("Здание №5");
-
+//      В задании не сказано, что метод должен принимать на вход массив,
+//      поэтому я задаю его внутри метода...
         int array[] = generateIntArray(20, 1000);
 
         System.out.println("Массив:");
